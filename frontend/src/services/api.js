@@ -1,4 +1,4 @@
-const BASE_URL = import.meta.env.VITE_API_URL || "http://127.0.0.1:8000";
+const BASE_URL = import.meta.env.VITE_API_URL || "const API_BASE = import.meta.env.VITE_API_URL;";
 export const getUserId = () => localStorage.getItem("mm_user_id") || "riya";
 
 export async function analyzeEntry(text, tags) {
